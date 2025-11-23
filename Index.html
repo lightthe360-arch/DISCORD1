@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinaloa Gang Sollicitatie</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #1e1e1e; color: #fff; padding: 20px; }
+    .container { max-width: 700px; margin: auto; background: #2c2c2c; padding: 30px; border-radius: 8px; box-shadow: 0 0 20px rgba(255,255,255,0.1);}
+    h2 { text-align: center; color: #f39c12; }
+    label { display: block; margin-top: 15px; color: #ddd; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: none; border-radius: 4px; background: #3c3c3c; color: #fff; }
+    button { margin-top: 20px; padding: 10px 20px; background: #f39c12; color: black; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #e67e22; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sinaloa Gang Sollicitatieformulier</h2>
+    <form action="/gang-aanvraag" method="POST">
+      <label>👤 Naam</label>
+      <input type="text" name="naam" placeholder="Jouw naam" required>
+
+      <label>🌐 Vorige servers & rol</label>
+      <textarea name="servers" rows="2" placeholder="Op welke servers heb je eerder gespeeld en welke rol?" required></textarea>
+
+      <label>💡 Wat betekent RP voor jou?</label>
+      <textarea name="watIsRP" rows="2" placeholder="Jouw visie op roleplay" required></textarea>
+
+      <label>⚙️ Wat vind je belangrijk in goede gang-RP?</label>
+      <textarea name="belangrijkeRP" rows="2" placeholder="Samenwerking, regels, creativiteit..." required></textarea>
+
+      <label>🧾 Motivatie</label>
+      <textarea name="motivatie" rows="2" placeholder="Waarom wil je bij onze gang?" required></textarea>
+
+      <label>🔁 Lange termijn actief</label>
+      <textarea name="langeTermijn" rows="1" placeholder="Ben je bereid langere tijd actief te blijven?" required></textarea>
+
+      <label>🧠 Omgaan met conflicten</label>
+      <textarea name="conflicten" rows="2" placeholder="Hoe reageer je bij meningsverschil?" required></textarea>
+
+      <label>📆 Beschikbaarheid</label>
+      <textarea name="beschikbaarheid" rows="1" placeholder="Ben je beschikbaar voor geplande RP?" required></textarea>
+
+      <label>🎭 Speelstijl</label>
+      <textarea name="speelstijl" rows="1" placeholder="24/7 crimineel of ook casual/legaal?" required></textarea>
+
+      <label>🧾 Extra motivatie</label>
+      <textarea name="extraMotivatie" rows="2" placeholder="Eventueel extra toelichting" required></textarea>
+
+      <button type="submit">Verzenden</button>
+    </form>
+  </div>
+</body>
+</html>
